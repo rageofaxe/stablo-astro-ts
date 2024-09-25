@@ -1,0 +1,45 @@
+export type AmazonKnife = {
+  recommendedusesforproduct: string;
+  brand: string;
+  modelname: string;
+  specialfeature: string;
+  agerangedescription: string;
+  includedcomponents: string[];
+  handlematerial: string;
+  color: string;
+  bladematerial: string;
+  style: string;
+  bladelength: string;
+  theme: string;
+  powersource: string;
+  handorientation: string;
+  countryoforigin?: string;
+  productcareinstructions: string;
+  itemweight: string;
+  bladeshape: string;
+  bladeedge: string;
+  iscordless?: boolean;
+  itemlength: string;
+  globaltradeidentificationnumber: string;
+  manufacturer: string;
+  upc: string[];
+  itempackagedimensions: {
+    l: string;
+    w: string;
+    h: string;
+  };
+  packageweight: string;
+  itemdimensions: {
+    l: string;
+    w: string;
+    h: string;
+  };
+  brandname: string;
+  warrantydescription: string;
+  material?: string;
+  suggestedusers: string;
+  numberofitems: number;
+  partnumber: string;
+  modelyear: number;
+  size: string;
+};
