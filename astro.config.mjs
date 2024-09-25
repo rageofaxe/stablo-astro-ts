@@ -4,15 +4,16 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
-
 import { remarkReadingTime } from "./src/utils/all";
+import svelte from "@astrojs/svelte";
 
+// https://astro.build/config
 export default defineConfig({
   site: "https://stablo-astro.web3templates.com",
   markdown: {
     remarkPlugins: [remarkReadingTime],
     rehypePlugins: ["rehype-plugin-image-native-lazy-loading"],
-    extendDefaultPlugins: true,
+    extendDefaultPlugins: true
   },
-  integrations: [tailwind(), mdx(), sitemap(), icon()],
+  integrations: [tailwind(), mdx(), sitemap(), icon(), svelte()]
 });
