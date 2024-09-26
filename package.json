@@ -32,5 +32,10 @@
     "@tailwindcss/typography": "^0.5.13",
     "classnames": "^2.5.1",
     "sharp": "^0.33.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "@iconify/tools": "^4.0.4"
+    }
   }
 }

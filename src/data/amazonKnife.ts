@@ -1,4 +1,4 @@
-export type AmazonKnife = {
+export type AmazonKnife2 = {
   recommendedusesforproduct: string;
   brand: string;
   modelname: string;
@@ -43,3 +43,22 @@ export type AmazonKnife = {
   modelyear: number;
   size: string;
 };
+
+export type Value = {
+  type: "cell",
+  value: number, 
+  dimension: string,
+  style?: string;
+}
+
+export type Knife = {
+  name: string;
+  bladeSteel: string;
+  bladeLength: Value;
+  bladeThickness: Value;
+  overallLength: Value;
+  handleThickness?: Value;
+  weight: Value;
+  price: Value
+  isMetricNumbers: boolean;
+}
