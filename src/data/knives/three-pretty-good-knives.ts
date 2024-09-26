@@ -40,4 +40,5 @@ const knife2: Knife = {
 export default {
   knife1,
   knife2,
+  knife3: knife2,
 };
