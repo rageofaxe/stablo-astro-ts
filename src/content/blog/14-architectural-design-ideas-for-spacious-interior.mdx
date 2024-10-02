@@ -9,6 +9,33 @@ tags: [design, architecture, interior]
 ---
 
 import Table from "@/components/svelte/ComparisonTable.svelte";
+import Row from "@/components/svelte/ComparisonRow.svelte";
 import knives from "@/data/knives/three-pretty-good-knives";
 
-<Table client:only knives={knives} />
+## Blade steel 
+
+Blade steel is a crucial factor in the performance and durability of bushcraft knives.
+
+<Row client:only knives={knives} prop={{name: "bladeSteel", title: "Blade Steel"}} />
+
+## Blade thickness
+
+Blade thickness is an important aspect of bushcraft knives that can significantly influence their performance and usability
+
+<Row client:only knives={knives} prop={{name: "bladeThickness", title: "Blade Thickness"}} />
+
+## Overall length
+
+The overall length of a bushcraft knife plays a significant role in its functionality, comfort, and versatility.
+
+<Row client:only knives={knives} prop={{name: "overallLength", title: "Overall Length"}} />
+
+## Weight
+
+The weight of a bushcraft knife is an important factor that can influence its performance, usability, and overall experience in the field. 
+
+<Row client:only knives={knives} prop={{name: "weight", title: "Weight"}} />
+
+## Price
+
+<Row client:only knives={knives} prop={{name: "price", title: "Price"}} />
